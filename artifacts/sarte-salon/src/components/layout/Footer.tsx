@@ -1,10 +1,13 @@
 import { Link } from "wouter";
 import { SiInstagram, SiFacebook, SiPinterest, SiTiktok } from "react-icons/si";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] border-t border-border pt-20 pb-10">
-      <div className="container mx-auto px-4 md:px-6">
+    <footer className="bg-card border-t border-border pt-0 pb-10 relative">
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+      <div className="container mx-auto px-4 md:px-6 max-w-[1200px] pt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="space-y-6">
@@ -15,16 +18,16 @@ export function Footer() {
               An ultra-premium beauty destination for discerning clients who treat self-care as an art form.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors" data-testid="social-ig">
+              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-transparent hover:text-primary hover:border-primary transition-colors duration-300" data-testid="social-ig">
                 <SiInstagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors" data-testid="social-fb">
+              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-transparent hover:text-primary hover:border-primary transition-colors duration-300" data-testid="social-fb">
                 <SiFacebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors" data-testid="social-pin">
+              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-transparent hover:text-primary hover:border-primary transition-colors duration-300" data-testid="social-pin">
                 <SiPinterest size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors" data-testid="social-tiktok">
+              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-transparent hover:text-primary hover:border-primary transition-colors duration-300" data-testid="social-tiktok">
                 <SiTiktok size={18} />
               </a>
             </div>
@@ -44,25 +47,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Hours */}
-          <div className="space-y-6">
-            <h4 className="font-serif text-xl">Hours</h4>
-            <ul className="space-y-4 text-muted-foreground">
-              <li className="flex justify-between">
-                <span>Mon - Fri</span>
-                <span>9:00 AM - 8:00 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Saturday</span>
-                <span>9:00 AM - 7:00 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Sunday</span>
-                <span>10:00 AM - 5:00 PM</span>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div className="space-y-6">
             <h4 className="font-serif text-xl">Contact</h4>
@@ -76,15 +60,30 @@ export function Footer() {
               </p>
             </address>
           </div>
+
+          {/* Newsletter */}
+          <div className="space-y-6">
+            <h4 className="font-serif text-xl">Newsletter</h4>
+            <p className="text-muted-foreground text-sm">Subscribe to receive updates, access to exclusive deals, and more.</p>
+            <form className="flex flex-col gap-3" onSubmit={e => e.preventDefault()}>
+              <Input type="email" placeholder="Enter your email" className="bg-background border-border focus-visible:ring-primary rounded-none" />
+              <Button className="w-full rounded-none bg-background border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors uppercase tracking-widest text-sm">
+                Subscribe
+              </Button>
+            </form>
+          </div>
         </div>
 
         <div className="divider-rose mb-8" />
         
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Sarte Salon. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="#" className="hover:text-foreground transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-foreground transition-colors">Terms of Service</Link>
+        <div className="flex flex-col items-center gap-6 text-sm text-muted-foreground">
+          <p className="font-serif italic text-primary text-xl">Est. 2015</p>
+          <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
+            <p>&copy; {new Date().getFullYear()} Sarte Salon. All rights reserved.</p>
+            <div className="flex gap-6">
+              <Link href="#" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+              <Link href="#" className="hover:text-foreground transition-colors">Terms of Service</Link>
+            </div>
           </div>
         </div>
       </div>

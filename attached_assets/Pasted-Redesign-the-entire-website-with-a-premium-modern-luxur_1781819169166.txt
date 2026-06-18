@@ -1,0 +1,46 @@
+Redesign the entire website with a premium, modern, luxury-quality appearance while keeping all existing functionality intact.
+
+Design goals:
+
+Make the website look like a high-end fintech, government, or enterprise platform.
+Use a clean, professional layout with excellent spacing and visual hierarchy.
+Create a polished and trustworthy user experience that feels expensive and well-designed.
+Ensure the design is fully responsive on desktop, tablet, and mobile devices.
+
+Visual style:
+
+Modern minimalist aesthetic.
+Elegant color palette using deep navy, royal blue, white, subtle gold accents, and soft gray backgrounds.
+Glassmorphism and subtle gradients where appropriate.
+Smooth hover effects and micro-animations.
+Rounded corners (12–16px), soft shadows, and premium card designs.
+Consistent typography using modern fonts such as Inter, Poppins, or Manrope.
+
+Homepage improvements:
+
+Create a stunning hero section with a professional headline, supporting text, and strong call-to-action buttons.
+Add modern statistics cards with animated counters.
+Add visually appealing feature sections with icons and illustrations.
+Improve section spacing and alignment.
+Include a professional testimonial or success stories section.
+Create a premium footer with organized navigation links and contact information.
+
+UI/UX improvements:
+
+Improve navigation bar with sticky behavior and smooth scrolling.
+Add loading states and smooth transitions.
+Improve forms with modern inputs, validation, and user feedback.
+Make buttons look premium with hover animations.
+Improve readability and accessibility.
+Ensure excellent contrast and consistent spacing throughout the site.
+
+Technical requirements:
+
+Refactor CSS for maintainability and consistency.
+Remove outdated styles and visual clutter.
+Optimize performance and responsiveness.
+Keep all current features working.
+Do not remove existing content unless necessary for design consistency.
+Produce production-quality code with a professional, premium appearance similar to modern SaaS, banking, or government digital platforms.
+
+The final result should look elegant, wealthy, trustworthy, modern, and significantly more premium than the current version.
