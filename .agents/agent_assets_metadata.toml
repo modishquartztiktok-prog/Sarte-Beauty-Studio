@@ -1,0 +1,50 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "_aZUQHz5ZTKep-zIkFCHD"
+uri = "file://artifacts/sarte-salon/public/hero.png"
+type = "image"
+title = "Luxury salon interior hero image"
+
+[[generated]]
+id = "3NjDwVvIUkHpJDVnHBApO"
+uri = "file://artifacts/sarte-salon/public/team-1.png"
+type = "image"
+title = "Female hairstylist portrait"
+
+[[generated]]
+id = "0cW8jCRnWVGTydOSLEn0c"
+uri = "file://artifacts/sarte-salon/public/team-2.png"
+type = "image"
+title = "Male hairdresser portrait"
+
+[[generated]]
+id = "Po6doZ5bPcokTwBeLrJgh"
+uri = "file://artifacts/sarte-salon/public/team-3.png"
+type = "image"
+title = "Female makeup artist portrait"
+
+[[generated]]
+id = "NGMx2j6byx9erOqX8Zm4k"
+uri = "file://artifacts/sarte-salon/public/gallery-1.png"
+type = "image"
+title = "Balayage hair transformation"
+
+[[generated]]
+id = "1d-FqB2SwBJKsOTWC6hV0"
+uri = "file://artifacts/sarte-salon/public/gallery-2.png"
+type = "image"
+title = "Bridal makeup look"
+
+[[generated]]
+id = "8q2M6KPXv8ZLtNoPgP2_F"
+uri = "file://artifacts/sarte-salon/public/instagram-1.png"
+type = "image"
+title = "Blowout hairstyle"
+
+[[generated]]
+id = "KUq3F9LGo5X5trHRHFItu"
+uri = "file://artifacts/sarte-salon/public/instagram-2.png"
+type = "image"
+title = "Gel nail art"
