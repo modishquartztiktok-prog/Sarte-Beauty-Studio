@@ -1,5 +1,5 @@
 [build]
-  command = "npm install -g pnpm@9 && pnpm install --no-frozen-lockfile && pnpm --filter @workspace/sarte-salon run build"
+  command = "pnpm install --no-frozen-lockfile && pnpm --filter @workspace/sarte-salon run build"
   publish = "artifacts/sarte-salon/dist/public"
 
 [build.environment]
